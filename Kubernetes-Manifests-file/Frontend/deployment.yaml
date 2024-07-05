@@ -27,6 +27,6 @@ spec:
         imagePullPolicy: Always
         env:
           - name: REACT_APP_BACKEND_URL
-            value: "http://backend.amanpathakdevops.study/api/tasks" # Set your domain here
+            value: "http://pramod.contentecho.in/api/tasks" # Set your domain here
         ports:
         - containerPort: 3000
