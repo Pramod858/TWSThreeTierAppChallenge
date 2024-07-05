@@ -21,14 +21,12 @@ spec:
       labels:
         role: frontend
     spec: 
-      imagePullSecrets:
-      - name: ecr-registry-secret
       containers:
       - name: frontend
         image: pramod858/full-stack-frontend:latest
         imagePullPolicy: Always
         env:
           - name: REACT_APP_BACKEND_URL
-            value: "http://backend.amanpathakdevops.study/api/tasks" #Set your domai here
+            value: "http://backend.amanpathakdevops.study/api/tasks" # Set your domain here
         ports:
         - containerPort: 3000
