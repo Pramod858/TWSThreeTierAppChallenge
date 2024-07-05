@@ -10,7 +10,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-    - host: backend.amanpathakdevops.study #Set your domain here
+    - host: pramod.contentecho.in #Set your domain here
       http:
         paths:
           - path: /api
