@@ -120,8 +120,8 @@ helm repo add eks https://aws.github.io/eks-charts
 helm repo update eks
 helm install aws-load-balancer-controller eks/aws-load-balancer-controller -n kube-system --set clusterName=my-eks --set serviceAccount.create=false --set serviceAccount.name=aws-load-balancer-controller
 kubectl get deployment -n kube-system aws-load-balancer-controller
-kubectl apply -f full_stack_lb.yaml
-kubectl get ing -n three-tier
+kubectl apply -f ingress.yaml
+kubectl get ing -n workshop
 ```
 
 ### Cleanup
